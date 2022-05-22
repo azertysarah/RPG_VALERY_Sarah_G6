@@ -15,7 +15,7 @@
             </Label>
          </top>
          <center>
-            <GridPane BorderPane.alignment="CENTER">
+            <GridPane BorderPane.alignment="CENTER" prefHeight="675.0" prefWidth="1222.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -28,10 +28,66 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <AnchorPane fx:id="warriorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Warrior.png');" GridPane.columnIndex="0" />
-                  <AnchorPane fx:id="mageView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Mage.png');" GridPane.columnIndex="1" />
-                  <AnchorPane fx:id="hunterView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Hunter.png');" GridPane.columnIndex="2" />
-                  <AnchorPane fx:id="healerView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Healer.png');" GridPane.columnIndex="3" />
+                  <AnchorPane fx:id="warriorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Warrior.png');" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <AnchorPane fx:id="mageView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Mage.png');" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <AnchorPane fx:id="hunterView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Hunter.png');" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <AnchorPane fx:id="healerView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Healer.png');" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label text="Warrior" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Papyrus Condensed" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mage" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                       <Font name="Papyrus Condensed" size="30.0" />
+                     </font>
+                  </Label>
+                   <Label text="Hunter" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                       <font>
+                           <Font name="Papyrus Condensed" size="30.0" />
+                       </font>
+                   </Label>
+                   <Label text="Healer" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                       <font>
+                           <Font name="Papyrus Condensed" size="30.0" />
+                       </font>
+                   </Label>
+                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="1" />
+                      <MenuItem mnemonicParsing="false" text="2" />
+                    </items>
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                       <items>
+                           <MenuItem mnemonicParsing="false" text="1" />
+                           <MenuItem mnemonicParsing="false" text="2" />
+                       </items>
+                       <font>
+                           <Font name="Arial" size="15.0" />
+                       </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                       <items>
+                           <MenuItem mnemonicParsing="false" text="1" />
+                           <MenuItem mnemonicParsing="false" text="2" />
+                       </items>
+                       <font>
+                           <Font name="Arial" size="15.0" />
+                       </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                       <items>
+                           <MenuItem mnemonicParsing="false" text="1" />
+                           <MenuItem mnemonicParsing="false" text="2" />
+                       </items>
+                       <font>
+                           <Font name="Arial" size="15.0" />
+                       </font>
+                  </SplitMenuButton>
                </children>
             </GridPane>
          </center>
