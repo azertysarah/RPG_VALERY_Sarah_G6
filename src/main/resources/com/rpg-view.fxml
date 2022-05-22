@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: url('rpgMenuBackground.png');"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rpgController">
+   <children>
+      <VBox id="VBox" alignment="CENTER" layoutX="654.0" layoutY="208.0" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+          <Label fx:id="TitleText" alignment="CENTER_RIGHT" style="-fx-text-fill: white;" text="RPG">
+            <font>
+               <Font name="Papyrus Condensed" size="70.0" />
+            </font></Label>
+          <Label alignment="CENTER_RIGHT" style="-fx-text-fill: white" text="VALERY Sarah G6">
+            <font>
+               <Font name="Papyrus Condensed" size="25.0" />
+            </font></Label>
+          <Button id="btnPlayScene1" fx:id="btnPlayScene1" alignment="CENTER_RIGHT" onAction="#handleBtn1" text="Jouer !" />
+
+      </VBox>
+   </children>
+</AnchorPane>
