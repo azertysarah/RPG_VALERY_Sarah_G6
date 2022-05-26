@@ -3,11 +3,11 @@ package com.isep.rpg;
 import java.util.List;
 
 public class Hunter extends Hero{
-    private int arrows;
+    private int arrows = 20;
 
     //Constructeur
-    public Hunter(int lifePoints, int armor, int weaponDamage, List<Potion> potions, List<Food> lembas, int arrows) {
-        super(lifePoints, armor, weaponDamage, potions, lembas);
+    public Hunter(List<Potion> potions, List<Food> lembas, int arrows) {
+        super(200, 2, 20, potions, lembas);
         this.arrows = arrows;
     }
 

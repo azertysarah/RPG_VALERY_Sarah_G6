@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Healer extends SpellCaster{
     //Constructeur
-    public Healer(int lifePoints, int armor, int weaponDamage, List<Potion> potions, List<Food> lembas, int manaPoints) {
-        super(lifePoints, armor, weaponDamage, potions, lembas, manaPoints);
+    public Healer(List<Potion> potions, List<Food> lembas) {
+        super(150, 2, 30, potions, lembas, 100);
     }
 
     //Implémentation de la méthode abstraite attack() héritée de la classe Hero

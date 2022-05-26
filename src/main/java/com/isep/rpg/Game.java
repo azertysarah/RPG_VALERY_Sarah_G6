@@ -8,8 +8,6 @@ public class Game {
     //inputParser
 
     //Méthodes
-    public void playGame(){
-
-    }
+    public void playGame(){}
     public void generateCombat(){}
 }

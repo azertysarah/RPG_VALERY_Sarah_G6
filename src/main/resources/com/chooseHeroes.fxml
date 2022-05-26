@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="1000" prefWidth="1500" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ChooseHeroesController">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ChooseHeroesController">
    <children>
       <BorderPane prefHeight="1000.0" prefWidth="1500.0">
          <top>
-            <Label prefWidth="1512.0" text="Choisissez la composition de votre équipe" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <Label prefWidth="1512.0" text="Choisissez la composition de votre équipe" textAlignment="RIGHT" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Papyrus Condensed" size="70.0" />
                </font>
             </Label>
          </top>
          <center>
-            <GridPane BorderPane.alignment="CENTER" prefHeight="675.0" prefWidth="1222.0">
+            <GridPane prefHeight="675.0" prefWidth="1222.0" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -23,9 +24,9 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" percentHeight="10.0" prefHeight="3.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <AnchorPane fx:id="warriorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url('Warrior.png');" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -52,42 +53,26 @@
                            <Font name="Papyrus Condensed" size="30.0" />
                        </font>
                    </Label>
-                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="1" />
-                      <MenuItem mnemonicParsing="false" text="2" />
-                    </items>
+                   <TextField fx:id="numberWarrior" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="150.0" promptText="Enter a number" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <font>
-                        <Font name="Arial" size="15.0" />
+                        <Font name="System Italic" size="15.0" />
                      </font>
-                  </SplitMenuButton>
-                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                       <items>
-                           <MenuItem mnemonicParsing="false" text="1" />
-                           <MenuItem mnemonicParsing="false" text="2" />
-                       </items>
+                   </TextField>
+                   <TextField fx:id="numberMage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="150.0" promptText="Enter a number" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                        <font>
-                           <Font name="Arial" size="15.0" />
+                           <Font name="System Italic" size="15.0" />
                        </font>
-                  </SplitMenuButton>
-                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                       <items>
-                           <MenuItem mnemonicParsing="false" text="1" />
-                           <MenuItem mnemonicParsing="false" text="2" />
-                       </items>
+                   </TextField>
+                   <TextField fx:id="numberHunter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="150.0" promptText="Enter a number" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                        <font>
-                           <Font name="Arial" size="15.0" />
+                           <Font name="System Italic" size="15.0" />
                        </font>
-                  </SplitMenuButton>
-                  <SplitMenuButton mnemonicParsing="false" text="-- Select a number" GridPane.halignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                       <items>
-                           <MenuItem mnemonicParsing="false" text="1" />
-                           <MenuItem mnemonicParsing="false" text="2" />
-                       </items>
+                   </TextField>
+                   <TextField fx:id="numberHealer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="150.0" promptText="Enter a number" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                        <font>
-                           <Font name="Arial" size="15.0" />
+                           <Font name="System Italic" size="15.0" />
                        </font>
-                  </SplitMenuButton>
+                   </TextField>
                </children>
             </GridPane>
          </center>
@@ -98,20 +83,32 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
               </rowConstraints>
               <children>
-                  <Button fx:id="btnHomeScene" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil">
+                  <Button fx:id="btnHomeScene" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                       <font>
                           <Font name="Papyrus Condensed" size="25.0" />
                       </font>
                   </Button>
-                  <Button fx:id="btnConfirmScene3" mnemonicParsing="false" text="Confirmer" GridPane.columnIndex="1">
+                  <Button fx:id="btnConfirmScene3" mnemonicParsing="false" onAction="#confirmBtn3to4" text="Confirmer" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                       <font>
                           <Font name="Papyrus Condensed" size="25.0" />
                       </font>
                   </Button>
+                  <Label fx:id="errorScene3" textFill="#9f0101">
+                     <font>
+                        <Font name="Papyrus Condensed" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" />
+                     </padding>
+                  </Label>
               </children>
+               <padding>
+                  <Insets bottom="200.0" />
+               </padding>
           </GridPane>
           </bottom>
       </BorderPane>

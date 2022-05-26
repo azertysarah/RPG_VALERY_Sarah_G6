@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Mage extends SpellCaster{
     //Constructeur
-    public Mage(int lifePoints, int armor, int weaponDamage, List<Potion> potions, List<Food> lembas, int manaPoints) {
-        super(lifePoints, armor, weaponDamage, potions, lembas, manaPoints);
+    public Mage(List<Potion> potions, List<Food> lembas) {
+        super(150, 3, 40, potions, lembas, 70);
     }
 
     //Implémentation de la méthode abstraite attack() héritée de la classe Hero
