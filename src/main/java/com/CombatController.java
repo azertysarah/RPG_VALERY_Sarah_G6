@@ -27,7 +27,7 @@ public class CombatController{
     @FXML
     GridPane grid;
 
-    public void heroesListDisplay(int warrior, int mage, int hunter, int healer){
+    public void heroesList(int warrior, int mage, int hunter, int healer){
         List heroesTeam = new ArrayList();
         heroesTeam.add(warrior);
         heroesTeam.add(mage);

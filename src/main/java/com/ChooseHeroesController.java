@@ -47,7 +47,7 @@ public class ChooseHeroesController{
         root = loader.load();
         //La méthode heroesListDisplay de la classe CombatController prends en paramètres les variables entrées par l'utilisateur
         CombatController combatController = loader.getController();
-        combatController.heroesListDisplay(warrior, mage, hunter, healer);
+        combatController.heroesList(warrior, mage, hunter, healer);
 
         //Messages d'erreurs ou passage à la page suivante
         try {
