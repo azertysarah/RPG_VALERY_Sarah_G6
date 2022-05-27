@@ -87,7 +87,7 @@
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
               </rowConstraints>
               <children>
-                  <Button fx:id="btnHomeScene" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                       <font>
                           <Font name="Papyrus Condensed" size="25.0" />
                       </font>

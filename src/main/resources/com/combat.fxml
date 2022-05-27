@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.CombatController"
-            prefHeight="700" prefWidth="1000" style="-fx-background-image: url('backgroundGame.png');">
-
+<AnchorPane prefHeight="700" prefWidth="1000" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CombatController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1000.0">
+         <bottom>
+             <GridPane BorderPane.alignment="CENTER">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                 <children>
+                     <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Papyrus Condensed" size="25.0" />
+                     </font></Button>
+                     <Button fx:id="btnBattle" mnemonicParsing="false" onAction="#battleDisplay" text="Start battle !" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Papyrus Condensed" size="25.0" />
+                     </font></Button>
+                 </children>
+             </GridPane>
+         </bottom>
+         <center>
+            <GridPane fx:id="grid" BorderPane.alignment="CENTER">
+              <columnConstraints>
+              </columnConstraints>
+              <rowConstraints>
+              </rowConstraints>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
 </AnchorPane>

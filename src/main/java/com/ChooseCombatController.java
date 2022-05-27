@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.util.Objects;
 
 public class ChooseCombatController {
-    //On choisis de rendre la variable public et static pour pouvoir l'utiliser dans d'autres classes (notamment la classe ChooseHeroesController)
+    //On choisis de rendre la variable public et static pour pouvoir l'utiliser dans d'autres classes
     public static int heroesNumber = 0;
 
     @FXML
