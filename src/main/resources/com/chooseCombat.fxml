@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700" prefWidth="1000" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ChooseCombatController">
+<AnchorPane prefHeight="700" prefWidth="1000" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ChooseCombatController">
    <children>
       <VBox prefHeight="700.0" prefWidth="1000.0">
          <children>

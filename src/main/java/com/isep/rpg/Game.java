@@ -9,5 +9,7 @@ public class Game {
 
     //Méthodes
     public void playGame(){}
-    public void generateCombat(){}
+    public void generateCombat(){
+
+    }
 }

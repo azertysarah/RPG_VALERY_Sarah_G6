@@ -13,5 +13,6 @@ public abstract class Enemy {
 
     //Pas de méthode abstraite pour l'attaque des ennemies parce que ce sont les mêmes
     public void attack(){
+
     }
 }

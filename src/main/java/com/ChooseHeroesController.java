@@ -45,9 +45,9 @@ public class ChooseHeroesController{
         //Instance du loader FXML, on charge la page combat.fxml
         FXMLLoader loader = new FXMLLoader(getClass().getResource("combat.fxml"));
         root = loader.load();
-        //La méthode heroesListDisplay de la classe CombatController prends en paramètres les variables entrées par l'utilisateur
+        //La méthode battleDisplay de la classe CombatController prends en paramètres les variables entrées par l'utilisateur
         CombatController combatController = loader.getController();
-        combatController.heroesList(warrior, mage, hunter, healer);
+        combatController.battleDisplay(warrior, mage, hunter, healer);
 
         //Messages d'erreurs ou passage à la page suivante
         try {
@@ -58,13 +58,14 @@ public class ChooseHeroesController{
                 Stage window = (Stage) btnConfirmScene3.getScene().getWindow();
                 window.setScene(new Scene(root, 1500, 1000));
 
+
             //Sinon on affiche un message d'erreur
             } else {
                 errorScene3.setText("The maths are wrong I guess...");
             }
-            //L'utilisateur doit rentrer des entiers dans chaque case, il doit donc mettre un 0 s'il y a un héros qu'il ne veut pas au lieu de laisser le champ vide
+        //L'utilisateur doit rentrer des entiers dans chaque case, il doit donc mettre un 0 s'il y a un héros qu'il ne veut pas au lieu de laisser le champ vide
         } catch (NumberFormatException e) {
-            errorScene3.setText("Please enter numbers in each field (integers)");
+            errorScene3.setText("Please enter interger numbers in each field");
         } catch (Exception e) {
             errorScene3.setText("Error");
         }

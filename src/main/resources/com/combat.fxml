@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="700" prefWidth="1000" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CombatController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-image: url('backgroundGame.png');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CombatController">
    <children>
-      <BorderPane prefHeight="700.0" prefWidth="1000.0">
-         <bottom>
-             <GridPane BorderPane.alignment="CENTER">
-                 <columnConstraints>
-                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                 </columnConstraints>
-                 <rowConstraints>
-                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                 </rowConstraints>
-                 <children>
-                     <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER">
-                     <font>
-                        <Font name="Papyrus Condensed" size="25.0" />
-                     </font></Button>
-                     <Button fx:id="btnBattle" mnemonicParsing="false" onAction="#battleDisplay" text="Start battle !" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-                     <font>
-                        <Font name="Papyrus Condensed" size="25.0" />
-                     </font></Button>
-                 </children>
-             </GridPane>
-         </bottom>
+      <BorderPane prefHeight="900.0" prefWidth="1400.0">
          <center>
-            <GridPane fx:id="grid" BorderPane.alignment="CENTER">
+            <GridPane fx:id="grid" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1260.0" BorderPane.alignment="CENTER">
               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
+               <children>
+                  <ImageView fx:id="enemy00" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
             </GridPane>
          </center>
+         <bottom>
+              <GridPane prefHeight="201.0" prefWidth="1400.0" BorderPane.alignment="CENTER">
+                  <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                      <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleBtn" text="Retour à la page d'accueil" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                          <font>
+                              <Font name="Papyrus Condensed" size="25.0" />
+                          </font></Button>
+                      <Button fx:id="btnBattle" mnemonicParsing="false" text="Start battle !" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                          <font>
+                              <Font name="Papyrus Condensed" size="25.0" />
+                          </font></Button>
+                  </children>
+              </GridPane>
+         </bottom>
       </BorderPane>
+      <ImageView fx:id="test" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
